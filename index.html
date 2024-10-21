@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Personal Portfolio Website - Bhanu</title>
+    <script src="https://kit.fontawesome.com/9acd30ae9f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="/Images/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>        
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>  
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>   
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <br><span>Bhanu Pratap Singh</span> <br>from India</h1>
+        </div>
+    </div>
+</div>
+
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/Images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt, suscipit perferendis ut iure, atque, laboriosam ex neque quis quam necessitatibus omnis ea facere quas? Nobis quam consectetur, dignissimos ipsa, eveniet perspiciatis molestias excepturi atque, optio velit nostrum cum tempora ducimus. Sapiente vel harum alias aliquam aperiam blanditiis repudiandae quae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore tempore quas deleniti cupiditate expedita mollitia delectus doloremque, commodi sunt, perspiciatis earum. Illum deleniti temporibus voluptates velit adipisci, tempora modi debitis.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                        <li><span>Web Developement</span><br>Web App Developement</li>
+                        <li><span>App Developement</span><br>Designing Web/App Interface</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internship">
+                    <ul>
+                        <li><span>Job Orieted Value Added Course (JOVAC)</span><br>A practical approach on Machine Learning for Data Science & Analytics<br></li>
+                        <li>Learned about how automation is done<br></li>
+                        <li>Learned NumPy & Pandas and the use of Jupyter & Google Collab</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Secondry School (2013-15)</span><br>Rapid Global School, Bidhuna</li>
+                        <li><span>Senior Secondry School (2015-18)</span><br>Rapid Global School, Bidhuna</li>
+                        <li><span>Bachelor of Technology in Computer Science (2019-23)</span><br>GLA University, Mathura</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certification">
+                    <ul>
+                        <li><span>Oracle</span><br>Certificate on Ethical Hacking and Cyber Security</li>
+                        <li><span>ShapeMySkills</span><br>One Day workshop on Machine Learning</li>
+                        <li><span>TCS ion</span><br>Designing Web/App Interface</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Services Section -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design involves creating the visual elements and layout of a website, while coding involves translating these designs into a functional website using programming languages like HTML, CSS, and JavaScript.</p>
+                <a href="#">Learn more.</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>UI/UX design is the process of creating user interfaces and user experiences for products like websites, applications, and custom software:</p>
+                <a href="#">Learn more.</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>In the context of app development, design is the process of creating the visual look, layout, and flow of an application's interface.  </p>
+                <a href="#">Learn more.</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+ <!-- Portfolio Section -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/Images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, soluta.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, soluta.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, soluta.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>   
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+
+  <!-- Contact Section -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>bhanu.singh896460@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9682913582</p>
+                <div class="social-icons">   
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="/CV/Resume@Bhanu-Rajput.pdf" download class="btn btn-2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Bhanu. Made with <i class="fa-solid fa-heart"></i> by Bhanu Pratap Singh (2024)</p>
+    </div>
+</div>
+    
+<script src="script.js">
+</script>
+
+</body>
+</html>
